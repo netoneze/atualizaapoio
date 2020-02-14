@@ -1,0 +1,21 @@
+
+{
+  "manifest_version": 2,
+  "name": "Atualiza apoio docker utfpr",
+  "version": "2.0",
+
+  "description": "Atualiza o apoio para evitar problemas com o Docker",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.apoio.deve/*Intranet/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
+
